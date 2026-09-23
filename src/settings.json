@@ -1,0 +1,8 @@
+{
+  "settings": {
+    "postExecutionScriptName": "./post_exec.sh",
+    "dbPath": "todo.db",
+    "dbScriptsFolderPath": "./dbScripts",
+    "newContractZipFileName": "./newContractData.zip"
+  }
+}

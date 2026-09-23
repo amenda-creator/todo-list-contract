@@ -1,0 +1,17 @@
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install -y nodejs npm
+
+WORKDIR /todo-contract
+
+RUN rm -rf ./*
+
+COPY package*.json /todo-contract/
+
+RUN npm install
+
+COPY src /todo-contract/src/
+COPY hp.cfg.override /todo-contract/
+COPY .env /todo-contract/
+
+RUN npm run buildLinux
