@@ -7,7 +7,7 @@ const todoContract = async (ctx) => {
   console.log('Todo contract is running.');
 
   global.__hpctx = ctx; // expose for cluster service
-
+//mmm
   try {
     await DBInitializer.init();
   } catch (e) {
