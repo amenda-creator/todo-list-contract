@@ -2,7 +2,7 @@ const HotPocket = require('hotpocket-nodejs-contract');
 const Controller = require('./Utils/controller');
 const { DBInitializer } = require('./Data.Deploy/initDB');
 const bson = require('bson');
-
+//lll
 const todoContract = async (ctx) => {
   console.log('Todo contract is running.');
 
